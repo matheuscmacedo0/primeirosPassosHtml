@@ -1,7 +1,10 @@
 body {
-    font-family: 'Roboto Mono';
+    font-family: 'Roboto';
     margin: 0 auto;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
 }
 /* .header {
     display: flex 1;
@@ -134,4 +137,62 @@ body {
     background: #f8f8f8;
     border-color: #f8f8f8;
     font-weight: 600;
+}
+
+/* FORMULÁRIO */
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    background: #f6f6f6;
+    /* max-width: 500px; */
+    align-self: center;
+
+}
+.formulario-input {
+    margin: 11px;
+}
+.botao-enviar {
+    display: flex;
+    justify-content: center;
+    /* margin: 15px 50px; */
+}
+.btn-enviar {
+    background: #323232;
+    border-color: #323232;
+    color: #fff;
+    font-weight: 600;
+    width: 7vw;
+    height: 5vh ;
+}
+
+.pai {
+    margin: 20px;
+    border: 2px solid #323232;
+    background-color: #87B379;
+}
+.pai div {
+    height: 100px;
+    width: 100px;
+    background-color: #E0E0FF;
+    border: 2px solid #FFC9AD;
+}
+.relative {
+    position: relative;
+}
+.relative div:last-child {
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+.absolute :nth-child(2) {
+    background: #B39382;
+}
+.fixed div:first-child {
+    background: #8158FF;
+    position: fixed;
+    top: 0;
+    left: 50vh;
+    width: 50%;
+    margin-top: 10vh;
 }
